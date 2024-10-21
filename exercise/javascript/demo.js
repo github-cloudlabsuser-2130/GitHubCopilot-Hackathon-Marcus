@@ -1,2 +1,4 @@
-// Question: What are the popular JavaScript testing frameworks?
-// Answer:
+//Generate a function that validates a credit card number.
+//The function will return if its Visa, Mastercard, Amex or Invalid.
+
+function creditCardValidator(cardNumber) 
