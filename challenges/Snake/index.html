@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+        canvas {
+            border: 2px solid #333; /* Dark border */
+            background-color: #fff; /* White background for the game area */
+            display: none;
+        }
+        #titlePage {
+            text-align: center;
+            background-color: #4CAF50; /* Green background */
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        #startButton, #resetButton {
+            padding: 10px 20px;
+            font-size: 20px;
+            margin: 10px;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #startButton:hover, #resetButton:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333; /* Dark text color */
+        }
+    </style>
+</head>
+<body>
+    <div id="titlePage">
+        <h1>Snake Game</h1>
+        <button id="startButton">Start Game</button>
+        <button id="resetButton" style="display: none;">Reset Game</button>
+    </div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="score">Score: 0</div>
+    <script src="script.js"></script>
+</body>
+</html>
